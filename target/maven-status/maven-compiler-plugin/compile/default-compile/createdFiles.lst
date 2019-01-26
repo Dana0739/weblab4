@@ -1,0 +1,16 @@
+ejb\SessionBean.class
+responses\UserResponse.class
+entities\Point.class
+controllers\UserController.class
+ejb\UserBean.class
+controllers\Application.class
+responses\RegisterResponse.class
+responses\LogoutResponse.class
+entities\Group.class
+entities\User.class
+responses\LoginResponse.class
+controllers\PointController.class
+utils\AuthenticationUtils.class
+utils\HibernateUtils.class
+ejb\PointBean.class
+entities\UserSession.class

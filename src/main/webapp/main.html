@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4 Zhetesova p3217 v.28705</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/mainVue.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/plot.js"></script>
+</head>
+<body onload="init()">
+
+<div id="title">
+    <div id="title1">
+        {{Title_text}}
+    </div>
+    <div id="title2">
+        {{Title_text}}
+    </div>
+    <div id="logoutA">
+        <a @click="logout">Logout</a>
+    </div>
+</div>
+
+<div id="input">
+    <form id="inputForm">
+        <table id="inputTable">
+            <tr>
+                <td id="label-x">
+                    X: {{ x }}
+                </td>
+                <td>
+                    <input type="radio" value="-5" v-model="x" id="x-5">
+                    <label for="x-5">-5</label>
+                    <input type="radio" value="-4" v-model="x" id="x-4">
+                    <label for="x-4">-4</label>
+                    <input type="radio" value="-3" v-model="x" id="x-3">
+                    <label for="x-3">-3</label>
+                    <input type="radio" value="-2" v-model="x" id="x-2">
+                    <label for="x-2">-2</label>
+                    <input type="radio" value="-1" v-model="x" id="x-1">
+                    <label for="x-1">-1</label>
+                    <input type="radio" value="0" v-model="x" id="x0">
+                    <label for="x0">0</label>
+                    <input type="radio" value="1" v-model="x" id="x1">
+                    <label for="x1">1</label>
+                    <input type="radio" value="2" v-model="x" id="x2">
+                    <label for="x2">2</label>
+                    <input type="radio" value="3" v-model="x" id="x3">
+                    <label for="x3">3</label>
+                </td>
+            </tr>
+            <tr>
+                <td id="label-y">
+                    <label for="y">Y:</label>
+                </td>
+                <td>
+                    <input type="text" id="y" pattern="^-?((([0-4](\.[0-9]{1,5})?))|5)$" v-model="y">
+                </td>
+            </tr>
+            <tr>
+                <td id="label-r">
+                    R: {{ r }}
+                </td>
+                <td>
+                    <input type="radio" value="-5" v-model="r" id="r-5">
+                    <label for="r-5">-5</label>
+                    <input type="radio" value="-4" v-model="r" id="r-4">
+                    <label for="r-4">-4</label>
+                    <input type="radio" value="-3" v-model="r" id="r-3">
+                    <label for="r-3">-3</label>
+                    <input type="radio" value="-2" v-model="r" id="r-2">
+                    <label for="r-2">-2</label>
+                    <input type="radio" value="-1" v-model="r" id="r-1">
+                    <label for="r-1">-1</label>
+                    <input type="radio" value="0" v-model="r" id="r0">
+                    <label for="r0">0</label>
+                    <input type="radio" value="1" v-model="r" id="r1">
+                    <label for="r1">1</label>
+                    <input type="radio" value="2" v-model="r" id="r2">
+                    <label for="r2">2</label>
+                    <input type="radio" value="3" v-model="r" id="r3">
+                    <label for="r3">3</label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div id="plot">
+    <canvas id="canvas" style="background-color:#ffffff; border-radius: 20px;" width="300" height="300"></canvas>
+</div>
+
+<div id="result">
+    <table id="resultsTable">
+        <tr>
+            <td>
+                <p>Id</p>
+            </td>
+            <td>
+                <p>X</p>
+            </td>
+            <td>
+                <p>Y</p>
+            </td>
+            <td>
+                <p>R</p>
+            </td>
+            <td>
+                <p>Success</p>
+            </td>
+        </tr>
+        <tr v-for="entry in resultData">
+            <td v-for="elem in entry">
+                {{elem}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

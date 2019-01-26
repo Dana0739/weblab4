@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4 Zhetesova p3217 v.28705</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="title">
+        <div id="title1">
+            {{Title_text}}
+        </div>
+        <div id="title2">
+            {{Title_text}}
+        </div>
+    </div>
+
+
+    <div id="forms">
+        <div id="choice">
+            <a id="login_button" @click="showLogin">login</a>
+            <a id="register_button" v-on:click="showRegister">register</a>
+        </div>
+        <div id="login_form" v-if="loginChoice">
+            <form onsubmit="return login()" method="post">
+                Input for username:<br/>
+                <input v-model="username" id="username_login" type="text" placeholder="Username"/><br/>
+                <p v-if="errorNameLogin">Name is empty!</p>
+                Input for password:<br/>
+                <input v-model="password" id="password_login" type="password" placeholder="Password"/><br/>
+                <p v-if="errorPasswordLogin">Password is empty!</p>
+                <input type="submit" value="Sign in" @click="submitLogin"/>
+            </form>
+        </div>
+        <div id="register_form" v-if="registerChoice">
+            <form onsubmit="return register()" method="post">
+                Input for username:<br/>
+                <input v-model="username" id="username_register" type="text" placeholder="Username"/><br/>
+                <p v-if="errorNameRegister">Name is empty!</p>
+                Input for password:<br/>
+                <input v-model="password" id="password_register" type="password" placeholder="Password"/><br/>
+                <p v-if="errorPasswordRegister">Password is empty!</p>
+                <input type="submit" value="Sign up" v-on:click="submitRegister"/>
+            </form>
+        </div>
+    </div>
+    <script src="js/loginVue.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
