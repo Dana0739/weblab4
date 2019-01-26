@@ -34,7 +34,7 @@ public class UserController {
         try {
             User user = userBean.findUserById(name);
             if (user != null) {
-                response.setSuccess(false);
+                response.setSuccess(true);
                 response.setMessage("Пользователь с таким логином уже существует!");
             } else {
                 user = new User(name, AuthenticationUtils.encode(password));
@@ -45,15 +45,15 @@ public class UserController {
                 sessionBean.addSession(session);
             }
         } catch (Exception e) {
-            response.setSuccess(false);
-            response.setMessage(e.getMessage());
+            response.setSuccess(true);
+            response.setMessage(e.getMessage() + "exception");
             return Response.status(200).
                     header("Access-Control-Allow-Origin", "*").
                     entity(response).
                     build();
         }
 
-        return Response.ok().
+        return Response.status(200).
                 header("Access-Control-Allow-Origin", "*").
                 entity(response).
                 build();
@@ -70,7 +70,7 @@ public class UserController {
     }
 
     @Path("/login/{name}/{password}")
-    @POST
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response login(@PathParam(value = "name") String name,
                           @PathParam(value = "password") String password,
@@ -103,7 +103,7 @@ public class UserController {
                     build();
         }
 
-        return Response.ok().
+        return Response.status(200).
                 header("Access-Control-Allow-Origin", "*").
                 entity(response).
                 build();
@@ -121,7 +121,7 @@ public class UserController {
         LogoutResponse response = new LogoutResponse();
         response.setSuccess(true);
         response.setMessage("Successfully logged out.");
-        return Response.ok().
+        return Response.status(200).
                 header("Access-Control-Allow-Origin", "*").
                 entity(response).
                 build();

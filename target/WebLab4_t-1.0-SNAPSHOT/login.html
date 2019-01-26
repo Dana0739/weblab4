@@ -28,7 +28,7 @@
             <a id="register_button" v-on:click="showRegister">register</a>
         </div>
         <div id="login_form" v-if="loginChoice">
-            <form onsubmit="return login()" method="post">
+            <form>
                 Input for username:<br/>
                 <input v-model="username" id="username_login" type="text" placeholder="Username"/><br/>
                 <p v-if="errorNameLogin">Name is empty!</p>
@@ -39,7 +39,7 @@
             </form>
         </div>
         <div id="register_form" v-if="registerChoice">
-            <form onsubmit="return register()" method="post">
+            <form>
                 Input for username:<br/>
                 <input v-model="username" id="username_register" type="text" placeholder="Username"/><br/>
                 <p v-if="errorNameRegister">Name is empty!</p>

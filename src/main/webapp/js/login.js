@@ -1,3 +1,7 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function validateUser(name, password) {
     return !(name === "" || name === null || password === "" || password === null);
 }
@@ -7,8 +11,7 @@ function login() {
     let password = form.password;
     if (validateUser(name, password)) {
         let url = "http://laptop-bmq72mqa:8080/WebLab4_t-1.0-SNAPSHOT/api/users/login/" + name + "/" + password;
-        let response = requestAjax(url);
-        console.log(response);
+        requestAjax(url);
     }
     else {
         if (name === "" || name === null) form.errorNameLogin = true;
@@ -16,9 +19,25 @@ function login() {
     }
 }
 
-function  ajaxResponse(response) {
-    if (response.status == 200)
-        alert("success!!!");
+async function ajaxResponse(response, jqXHR) {
+    let resp = JSON.parse(response);
+    if (resp.success.toString() === "200") {
+        if (resp.message.toString() === "Пользователь с таким логином уже существует!"
+            || resp.message.toString() === "Неверный логин или пароль!"
+            || resp.message.toString() === "") {
+            alert(resp.message);
+            await sleep(10000);
+        } else if (resp.message.toString() === "Регистрация успешно выполнена!"
+                    || resp.message.toString() === "nullexception") {
+            window.location.replace("/main.html");
+        } else {
+            alert("Server exception: " + resp.message);
+            await sleep(10000);
+        }
+    } else {
+        alert(jqXHR.status);
+        await sleep(10000);
+    }
 }
 
 function register() {
@@ -26,8 +45,7 @@ function register() {
     let password = form.password;
     if (validateUser(name, password)) {
         let url = "http://laptop-bmq72mqa:8080/WebLab4_t-1.0-SNAPSHOT/api/users/register/" + name + "/" + password;
-        let response = requestAjax(url);
-        console.log(response);
+        requestAjax(url);
     }
     else {
         if (name === "" || name === null) form.errorNameRequest = true;
@@ -41,8 +59,6 @@ function requestAjax(url) {
         type: "GET",
         error: (jqXHR) => alert("Wasted\nStatus: " + jqXHR.status),
         success: (response, jqXHR) => {
-        alert("Wasted\nStatus: " + jqXHR.text);
-            ajaxResponse(response);
+            ajaxResponse(response, jqXHR);
         }
-});
-}
+})}
