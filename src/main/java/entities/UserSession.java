@@ -9,10 +9,10 @@ import javax.persistence.*;
 })
 public class UserSession implements Serializable {
     @Id
-    @Column(name="sessionId", nullable=false, length=32)
+    @Column(name="sessionId", nullable=false)
     private String sessionId;
 
-    @Column(name="name", nullable=false, length = 30)
+    @Column(name="name", nullable=false)
     private String name;
 
     public UserSession() {}

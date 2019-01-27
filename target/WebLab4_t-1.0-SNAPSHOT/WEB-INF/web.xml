@@ -22,12 +22,12 @@
             <http-method>POST</http-method>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>AUTHORISED</role-name>
+            <role-name>users</role-name>
         </auth-constraint>
     </security-constraint>
 
     <security-role>
-        <role-name>AUTHORISED</role-name>
+        <role-name>users</role-name>
     </security-role>
 
     <login-config>

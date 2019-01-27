@@ -1,5 +1,6 @@
 package ejb;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.persistence.*;
 
@@ -8,12 +9,11 @@ import entities.UserSession;
 @Stateless
 public class SessionBean {
 
+    @EJB
+    private PointBean pointBean;
+
     public UserSession addSession(UserSession session) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
-        EntityManager em = entityManagerFactory.createEntityManager();
-        em.persist(session);
-        em.close();
-        return session;
+        return (UserSession) pointBean.addObject(session);
     }
 
     public void removeSession(UserSession session) {

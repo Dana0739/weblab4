@@ -11,6 +11,7 @@ import utils.AuthenticationUtils;
 
 import javax.ejb.EJB;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -22,31 +23,34 @@ public class UserController {
     private UserBean userBean;
     @EJB
     private SessionBean sessionBean;
+    @Context
+    private HttpServletRequest request;
 
-    @Path("/register/{name}/{password}")
+    @Path("/register")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response register(@PathParam(value = "name") String name,
-                             @PathParam(value = "password") String password,
-                             @Context HttpServletRequest request) {
-
+    public Response register(@QueryParam(value = "username") String name,
+                             @QueryParam(value = "password") String password) {
+        HttpSession session = request.getSession(true);
+        String sid = session.getId();
         RegisterResponse response = new RegisterResponse();
         try {
             User user = userBean.findUserById(name);
             if (user != null) {
-                response.setSuccess(true);
+                response.setSuccess(false);
                 response.setMessage("Пользователь с таким логином уже существует!");
             } else {
+                request.login(name, password);
                 user = new User(name, AuthenticationUtils.encode(password));
                 userBean.createUser(user);
                 response.setSuccess(true);
                 response.setMessage("Регистрация успешно выполнена!");
-                UserSession session = new UserSession(request.getRequestedSessionId(), name);
-                sessionBean.addSession(session);
+                UserSession Usession = new UserSession(sid, name);
+                sessionBean.addSession(Usession);
             }
         } catch (Exception e) {
-            response.setSuccess(true);
-            response.setMessage(e.getMessage() + "exception");
+            response.setSuccess(false);
+            response.setMessage(e.getMessage());
             return Response.status(200).
                     header("Access-Control-Allow-Origin", "*").
                     entity(response).
@@ -69,24 +73,26 @@ public class UserController {
                 build();
     }
 
-    @Path("/login/{name}/{password}")
+    @Path("/login")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(@PathParam(value = "name") String name,
-                          @PathParam(value = "password") String password,
-                          @Context HttpServletRequest request){
-
+    public Response login(@QueryParam(value = "username") String name,
+                          @QueryParam(value = "password") String password) {
+        HttpSession session = request.getSession(true);
+        String sid = session.getId();
         LoginResponse response = new LoginResponse();
         try {
             User user = new User(name, AuthenticationUtils.encode(password));
             if(userBean.checkPassword(user)) {
+                request.login(name, password);
                 response.setSuccess(true);
+                response.setMessage("Успешная авторизация!\n" + request.isUserInRole("users"));
+                UserSession Usession = new UserSession(sid, name);
+                sessionBean.addSession(Usession);
             }
             else{
                 response.setSuccess(false);
                 response.setMessage("Неверный логин или пароль!");
-                UserSession session = new UserSession(request.getRequestedSessionId(), name);
-                sessionBean.addSession(session);
                 return  Response.ok().
                         header("Access-Control-Allow-Origin", "*").
                         entity(response).
@@ -112,12 +118,16 @@ public class UserController {
     @Path("/logout")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(
-                          @Context HttpServletRequest request){
-
-        UserSession session = sessionBean.findUserBySessionId(request.getRequestedSessionId());
-        sessionBean.removeSession(session);
-
+    public Response logout(){
+        HttpSession session = request.getSession();
+        String sid = session.getId();
+        UserSession Usession = sessionBean.findUserBySessionId(sid);
+        sessionBean.removeSession(Usession);
+        try {request.logout(); }
+            catch (Exception e) {
+            //smth
+        }
+        request.getSession(false).invalidate();
         LogoutResponse response = new LogoutResponse();
         response.setSuccess(true);
         response.setMessage("Successfully logged out.");

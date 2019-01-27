@@ -10,12 +10,16 @@ import entities.Point;
 @Stateless
 public class PointBean {
 
-    public Point addPoint(Point point) {
+    public Object addObject(Object object) {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
         EntityManager em = entityManagerFactory.createEntityManager();
-        em.persist(point);
+        em.persist(object);
         em.close();
-        return point;
+        return object;
+    }
+
+    public Point addPoint(Point point) {
+        return (Point) addObject(point);
     }
 
     public List<Point> findPointsByUserId(String id) {
