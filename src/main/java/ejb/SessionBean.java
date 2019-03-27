@@ -16,15 +16,21 @@ public class SessionBean {
         return (UserSession) pointBean.addObject(session);
     }
 
-    public void removeSession(UserSession session) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+    public void removeSession(String sessionId) {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
         EntityManager em = entityManagerFactory.createEntityManager();
-        em.remove(session);
+        UserSession u = findUserBySessionId(sessionId);
+        if (u != null) {
+            UserSession newU = em.merge(u);
+            em.remove(newU);
+        } else {
+            System.err.println("######NOT FOUND#########" + " " + sessionId);
+        }
         em.close();
     }
 
     public UserSession findUserBySessionId(String sessionId) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
         EntityManager em = entityManagerFactory.createEntityManager();
         TypedQuery<UserSession> query = em.createNamedQuery("findUserBySessionId", UserSession.class);
         query.setParameter("sessionId", sessionId);

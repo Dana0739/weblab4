@@ -6,8 +6,8 @@ import ejb.UserBean;
 import entities.Point;
 import entities.User;
 import entities.UserSession;
+import responses.PointResponse;
 
-import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -18,11 +18,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
 import java.util.List;
 
 @Path("/points")
-@RolesAllowed("users")
 public class PointController {
     @EJB
     private PointBean pointBean;
@@ -39,58 +37,57 @@ public class PointController {
     public Response getAll(){
         HttpSession session = request.getSession(false);
         String sid = session.getId();
-        List<Point> points;
-        String sessionId = sid;
-        String name = sessionBean.findUserBySessionId(sessionId).getName();
-        try {
-            points = getPointsByLogin(name);
-        }
-        catch (Exception e){
-            System.err.println("Что-то пошло не так на этапе получения точек по логину" + e);
-
-            return Response.status(500).
-                    header("Access-Control-Allow-Origin", "*").
+        PointResponse response = new PointResponse();
+        if (sid != null) {
+            String name = sessionBean.findUserBySessionId(sid).getName();
+            try {
+                response.setPoints(getPointsByLogin(name));
+            }
+            catch (Exception e){
+                System.err.println("Что-то пошло не так на этапе получения точек по логину" + e);
+                return Response.status(500).
+                        build();
+            }
+        } else {
+            response.setSuccess(false);
+            return Response.
+                    status(200).
+                    entity(response).
                     build();
         }
-
+        response.setSuccess(true);
         return Response.
                 status(200).
-                header("Access-Control-Allow-Origin", "*").
-                entity(convertPointsInJSON(points)).
+                entity(response).
                 build();
     }
 
     @Path("/add")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response addNewPoint(@QueryParam(value = "x") int x,
-                                @QueryParam(value = "y") int y,
-                                @QueryParam(value = "r") int r){
+    public Response addNewPoint(@QueryParam(value = "x") double x,
+                                @QueryParam(value = "y") double y,
+                                @QueryParam(value = "r") double r){
         HttpSession session = request.getSession(false);
         String sid = session.getId();
-        List<Point> points;
+        PointResponse response = new PointResponse();
         try {
-
-            String sessionId = sid;
-            UserSession Usession = sessionBean.findUserBySessionId(sessionId);
+            UserSession Usession = sessionBean.findUserBySessionId(sid);
             String userName = Usession.getName();
             User user = userBean.findUserById(userName);
             Point point = new Point(x, y, r, user);
             pointBean.addPoint(point);
-
-            points = getPointsByLogin(userName);
+            response.setPoints(getPointsByLogin(userName));
         }
         catch (Exception e){
             System.err.println("Что-то пошло не так на этапе добавления новой точки" + e);
-
             return Response.status(500).
-                    header("Access-Control-Allow-Origin", "*").
                     build();
         }
+        response.setSuccess(true);
         return Response.
                 status(200).
-                header("Access-Control-Allow-Origin", "*").
-                entity(convertPointsInJSON(points)).
+                entity(response).
                 build();
     }
 
@@ -109,6 +106,6 @@ public class PointController {
     }
 
     private List<Point> getPointsByLogin(String login){
-        return (login == null ? new ArrayList<Point>() : pointBean.findPointsByUserId(login));
+        return pointBean.findPointsByUserId(login);
     }
 }

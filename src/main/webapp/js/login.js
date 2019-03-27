@@ -6,17 +6,16 @@ function validateUser(name, password) {
     return !(name === "" || name === null || password === "" || password === null);
 }
 
-function login() {
+function doRequest(str) {
     let name = form.username;
     let password = form.password;
     if (validateUser(name, password)) {
-        //let sid = document.cookie.match('sid=([^;]*)')[1];
-        let url = "/WebLab4_t-1.0-SNAPSHOT/api/users/login";
+        let url = "/WebLab4_t-1.0-SNAPSHOT/api/users/" + str;
         requestAjax(url, name, password);
     }
     else {
-        if (name === "" || name === null) form.errorNameLogin = true;
-        if (password === "" || password === null) form.errorPasswordLogin = true;
+        if (name === "" || name === null) form.errorNameRegister = true;
+        if (password === "" || password === null) form.errorPasswordRegister = true;
     }
 }
 
@@ -25,21 +24,7 @@ function doResponse(response) {
         window.location.replace("/WebLab4_t-1.0-SNAPSHOT/main.html");
     } else {
         alert("Server exception: " + response.message);
-        sleep(10000);
-    }
-}
-
-function register() {
-    let name = form.username;
-    let password = form.password;
-    if (validateUser(name, password)) {
-        //let sid = document.cookie.match('sid=([^;]*)')[1];
-        let url = "/WebLab4_t-1.0-SNAPSHOT/api/users/register";
-        requestAjax(url, name, password);
-    }
-    else {
-        if (name === "" || name === null) form.errorNameRequest = true;
-        if (password === "" || password === null) form.errorPasswordRequest = true;
+        sleep(10000); // будущая оптимизация
     }
 }
 

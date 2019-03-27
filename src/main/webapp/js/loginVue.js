@@ -44,10 +44,10 @@ let form = new Vue({
             this.password = "";
         },
         submitLogin: function () {
-            login();
+            doRequest("login");
         },
         submitRegister: function () {
-            register();
+            doRequest("register");
         }
     }
 });

@@ -7,42 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6aed64ee-40e5-47c1-96d5-be251f66169e" name="Default Changelist" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0f8ed398-8913-4033-a79b-f243484093a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0f8ed398-8913-4033-a79b-f243484093a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0f8ed398-8913-4033-a79b-f243484093a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0f8ed398-8913-4033-a79b-f243484093a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/responses/PointResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebLab4_t.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebLab4_t.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javaee.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/javaee.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/PointController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/PointController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ejb/PointBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ejb/PointBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ejb/SessionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ejb/SessionBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/UserSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ejb/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ejb/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/responses/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/responses/LogoutResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/responses/RegisterResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AuthenticationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AuthenticationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/loginVue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/loginVue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/controllers/PointController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/controllers/PointController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/controllers/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/ejb/PointBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/ejb/PointBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/ejb/SessionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/ejb/SessionBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/ejb/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/ejb/UserBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/entities/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/entities/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/entities/UserSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/entities/UserSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/sun-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/sun-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/entities/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/responses/LoginResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/responses/LogoutResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/responses/RegisterResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/utils/AuthenticationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/classes/utils/AuthenticationUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/sun-web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/js/loginVue.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/js/loginVue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/WebLab4_t-1.0-SNAPSHOT/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/PointController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/PointController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ejb/PointBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejb/PointBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ejb/SessionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejb/SessionBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ejb/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejb/UserBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/UserSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/UserSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/responses/LoginResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/responses/LogoutResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/responses/RegisterResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/AuthenticationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/AuthenticationUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,6 +105,33 @@
         <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="users: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
@@ -93,37 +139,41 @@
     <session id="-249412094">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.48" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
+          <entry key="CLASS" value="7" />
           <entry key="Database Element" value="1" />
           <entry key="Git file" value="1" />
-          <entry key="HTML" value="17" />
-          <entry key="JAVA" value="147" />
+          <entry key="HTML" value="23" />
+          <entry key="JAVA" value="223" />
           <entry key="JSP" value="2" />
-          <entry key="JavaScript" value="13" />
+          <entry key="JavaScript" value="27" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="1" />
-          <entry key="Vue.js" value="1" />
-          <entry key="XML" value="60" />
+          <entry key="Vue.js" value="2" />
+          <entry key="XML" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1294" />
-          <entry key="JAVA" value="2773" />
-          <entry key="JavaScript" value="2013" />
+          <entry key="JAVA" value="3696" />
+          <entry key="JavaScript" value="2098" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="SQL" value="13" />
-          <entry key="Vue.js" value="18" />
-          <entry key="XML" value="501" />
+          <entry key="Vue.js" value="19" />
+          <entry key="XML" value="526" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -139,19 +189,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="81">
+              <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#canvas#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PointController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="121" column="50" lean-forward="true" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+            <state relative-caret-position="-55">
+              <caret line="77" column="51" lean-forward="true" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,19 +213,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="425">
+              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1422#1423#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+                <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,18 +240,27 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>session</find>
       <find>real</find>
       <find>encodeSha</find>
       <find>named</find>
       <find>GET</find>
       <find>lo</find>
       <find>log</find>
+      <find>lab4</find>
+      <find>response</find>
+      <find>######NOT FOUND#########</find>
+      <find>#</find>
+      <find>##</find>
+      <find>header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;)</find>
+      <find>inva</find>
+      <find>session</find>
+      <find>####</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,9 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/ejb/UserEJB.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/loginServlet.java" />
@@ -235,32 +296,35 @@
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/AuthenticationUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/Application.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/validation.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/requests.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/plot.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.vue" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/main.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/mainVue.js" />
         <option value="$PROJECT_DIR$/src/main/java/utils/HibernateUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ejb/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/loginVue.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ejb/PointBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ejb/SessionBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/UserSession.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/PointController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Group.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/UserPassCallbackHandler.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ejb/PointBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/AuthenticationUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/responses/PointResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/лул.vue" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/loginVue.js" />
+        <option value="$PROJECT_DIR$/src/main/java/ejb/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/UserSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ejb/SessionBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filter/CorsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/PointController.java" />
       </list>
     </option>
   </component>
@@ -284,8 +348,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MavenImportPreferences">
@@ -313,8 +377,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="400" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -339,8 +403,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,23 +442,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ejb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebLab4_t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebLab4_t" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebLab4_t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebLab4_t" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebLab4_t" type="b2602c69:ProjectViewProjectNode" />
@@ -426,20 +472,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebLab4_t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebLab4_t" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,9 +488,9 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548580121083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553721682497" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kursach/DND/pip_coursework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -459,18 +499,18 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24356617" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ITMO\2 course\1sem\pip\lab4\WebLab4_t\src\main" />
       <recent name="D:\ITMO\2 course\1sem\pip\lab4\WebLab4_t" />
       <recent name="D:\ITMO\2 course\1sem\pip\lab4\WebLab4_t\web" />
       <recent name="D:\ITMO\2 course\1sem\pip\lab4\WebLab4_t\src\main\resources" />
       <recent name="D:\ITMO\2 course\1sem\pip\lab4\WebLab4_t\web\WEB-INF" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controllers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -486,7 +526,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false" show_console_on_std_err="true" show_console_on_std_out="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebLab4_t_war_exploded" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -571,6 +611,11 @@
       <workItem from="1548159694726" duration="71281000" />
       <workItem from="1548448986198" duration="11182000" />
       <workItem from="1548497144726" duration="46010000" />
+      <workItem from="1548865764357" duration="3218000" />
+      <workItem from="1551778948023" duration="16456000" />
+      <workItem from="1552323661587" duration="3041000" />
+      <workItem from="1552926174213" duration="2065000" />
+      <workItem from="1553611094583" duration="33122000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1548446445469</created>
@@ -583,7 +628,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128473000" />
+    <option name="totallyTimeSpent" value="186375000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,7 +641,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -610,14 +654,14 @@
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3319149" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.40992907" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.3744681" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.6453901" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32907802" />
@@ -654,7 +698,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main/webapp/js/loginVue.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -674,28 +717,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f8ed398-8913-4033-a79b-f243484093a2/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://0f8ed398-8913-4033-a79b-f243484093a2/database/postgres/schema/public/table/users.sql" />
-    <entry file="das://0f8ed398-8913-4033-a79b-f243484093a2/database/postgres/schema/public/table/users" />
-    <entry file="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/javax/persistence/Id.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/pointServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/requests.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/RegisterResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/logoutServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/loginServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/requests/RegisterRequest.java" />
@@ -704,79 +728,225 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/glassfish-web.xml" />
     <entry file="file://$PROJECT_DIR$/META-INF/application.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/requests/UserRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/requests/AddPointRequest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/requests/LoginRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/UserResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/responses/LogoutResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/validation.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mainVue.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserPassCallbackHandler.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/javaee.jar!/javax/servlet/http/HttpServletRequest.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.0/javax.servlet-api-4.0.0.jar!/javax/servlet/http/HttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="1632">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/plot.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Group.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/responses/RegisterResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/responses/LoginResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/responses/LogoutResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/HibernateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="289">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/лул.vue" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mainVue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/AuthenticationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/loginVue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/plot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="130" column="29" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/PointBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#985#992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="14" column="92" lean-forward="true" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/ws/rs/core/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="116" selection-start-line="7" selection-start-column="116" selection-end-line="7" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/responses/UserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/SessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/responses/PointResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+        <state relative-caret-position="81">
+          <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/servlet/http/HttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        <state relative-caret-position="131">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1624">
+          <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filter/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -785,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="425">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1422#1423#0" expanded="true" />
@@ -801,171 +971,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/HibernateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/SessionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/PointBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/loginVue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/AuthenticationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PointController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserPassCallbackHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javaee.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.0/javax.servlet-api-4.0.0.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="106" column="12" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#3020#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="121" column="50" lean-forward="true" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+        <state relative-caret-position="-55">
+          <caret line="77" column="51" lean-forward="true" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1003,7 +1012,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jquery-3.3.1</last-edited>
+          <last-edited>@types/bootstrap</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

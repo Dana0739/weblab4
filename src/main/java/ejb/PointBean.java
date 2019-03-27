@@ -11,7 +11,7 @@ import entities.Point;
 public class PointBean {
 
     public Object addObject(Object object) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
         EntityManager em = entityManagerFactory.createEntityManager();
         em.persist(object);
         em.close();
@@ -23,7 +23,7 @@ public class PointBean {
     }
 
     public List<Point> findPointsByUserId(String id) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
         EntityManager em = entityManagerFactory.createEntityManager();
         TypedQuery<Point> query = em.createNamedQuery("findSpotsByUserId", Point.class);
         query.setParameter("userName", id);

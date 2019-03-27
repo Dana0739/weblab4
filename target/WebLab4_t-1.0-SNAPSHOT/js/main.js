@@ -1,3 +1,7 @@
+window.onload = function () {
+
+}
+
 function InputRadioClick(param, val) {
     if (param === 'x') {
         form.x = val;

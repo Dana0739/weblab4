@@ -4,12 +4,11 @@
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
 
-<persistence-unit name="lab4" transaction-type="JTA">
+<persistence-unit name="jdbc/showcase" transaction-type="JTA">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-    <jta-data-source>lab4</jta-data-source>
+    <jta-data-source>jdbc/showcase</jta-data-source>
     <class>entities.User</class>
     <class>entities.Point</class>
-    <class>entities.Group</class>
     <class>entities.UserSession</class>
     <properties>
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
@@ -28,7 +27,7 @@
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
         <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.10.99/studs" />
         <property name="javax.persistence.jdbc.user" value="s243870" />
-        <property name="javax.persistence.jdbc.password" value="afa545" />
+        <property name="javax.persistence.jdbc.password" value="tpq682" />
 
         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
         <property name="hibernate.hbm2ddl.auto" value="update" />

@@ -5,7 +5,6 @@ import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.*;
 
-import entities.Group;
 import entities.User;
 import utils.AuthenticationUtils;
 
@@ -13,25 +12,21 @@ import utils.AuthenticationUtils;
 public class UserBean {
 
     public User createUser(User user) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
         EntityManager em = entityManagerFactory.createEntityManager();
         try {
-            user.setPassword(AuthenticationUtils.encode(user.getPassword()));
+            user.setPassword(user.getPassword());
         } catch (Exception e) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, e);
             e.printStackTrace();
         }
-        Group group = new Group();
-        group.setName(user.getName());
-        group.setGroupname(Group.USERS_GROUP);
         em.persist(user);
-        em.persist(group);
         em.close();
         return user;
     }
 
     public User findUserById(String id) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
         EntityManager em = entityManagerFactory.createEntityManager();
         TypedQuery<User> query = em.createNamedQuery("findUserById", User.class);
         query.setParameter("name", id);
