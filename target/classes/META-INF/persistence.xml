@@ -4,37 +4,26 @@
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
 
-<persistence-unit name="jdbc/showcase" transaction-type="JTA">
+<persistence-unit name="jdbc/wl4pu" transaction-type="JTA">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-    <jta-data-source>jdbc/showcase</jta-data-source>
+    <jta-data-source>jdbc/wl4</jta-data-source>
     <class>entities.User</class>
     <class>entities.Point</class>
     <class>entities.UserSession</class>
+
     <properties>
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres" />
-        <property name="javax.persistence.jdbc.user" value="postgres" />
-        <property name="javax.persistence.jdbc.password" value="123" />
+        <property name="javax.persistence.jdbc.url" value="jdbc://192.168.10.99:5432/studs" />
+        <property name="javax.persistence.jdbc.user" value="s242463" />
+        <property name="javax.persistence.jdbc.password" value="qoo724" />
 
         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-        <property name="hibernate.hbm2ddl.auto" value="update" />
+        <property name="hibernate.hbm2ddl.auto" value="create" />
         <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform" />
+
         <property name="hibernate.show_sql" value="true" />
         <property name="hibernate.format_sql" value="true" />
     </properties>
-
-    <!--properties>
-        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.10.99/studs" />
-        <property name="javax.persistence.jdbc.user" value="s243870" />
-        <property name="javax.persistence.jdbc.password" value="tpq682" />
-
-        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-        <property name="hibernate.hbm2ddl.auto" value="update" />
-
-        <property name="hibernate.show_sql" value="true" />
-        <property name="hibernate.format_sql" value="true" />
-    </properties-->
 
 </persistence-unit>
 

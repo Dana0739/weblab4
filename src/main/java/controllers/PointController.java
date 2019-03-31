@@ -9,9 +9,6 @@ import entities.UserSession;
 import responses.PointResponse;
 
 import javax.ejb.EJB;
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.ws.rs.*;
@@ -89,20 +86,6 @@ public class PointController {
                 status(200).
                 entity(response).
                 build();
-    }
-
-    private JsonArray convertPointsInJSON(List<Point> points){
-        JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
-        for (Point p : points) {
-            jsonArrayBuilder.add(
-                    Json.createObjectBuilder().
-                            add("x", p.getX()).
-                            add("y", p.getY()).
-                            add("r", p.getR()).
-                            add("isHit", p.isInArea())
-            );
-        }
-        return  jsonArrayBuilder.build();
     }
 
     private List<Point> getPointsByLogin(String login){

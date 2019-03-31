@@ -9,12 +9,11 @@ import entities.Point;
 
 @Stateless
 public class PointBean {
+    @PersistenceContext
+    EntityManager em;
 
-    public Object addObject(Object object) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
-        EntityManager em = entityManagerFactory.createEntityManager();
+    Object addObject(Object object) {
         em.persist(object);
-        em.close();
         return object;
     }
 
@@ -23,8 +22,6 @@ public class PointBean {
     }
 
     public List<Point> findPointsByUserId(String id) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jdbc/showcase");
-        EntityManager em = entityManagerFactory.createEntityManager();
         TypedQuery<Point> query = em.createNamedQuery("findSpotsByUserId", Point.class);
         query.setParameter("userName", id);
         List<Point> points = new ArrayList<Point>();
@@ -34,7 +31,6 @@ public class PointBean {
             // getSingleResult throws NoResultException in case there is no user in DB
             // ignore exception and return NULL for user instead
         }
-        em.close();
         return points;
     }
 }

@@ -21,6 +21,7 @@
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.3.7.Final" />
           <element id="library" level="project" name="Maven: javax.persistence:javax.persistence-api:2.2" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.2-1002-jdbc4" />
+          <element id="library" level="project" name="Maven: javax:javaee-api:6.0" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
         </element>
       </element>
