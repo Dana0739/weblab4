@@ -14,8 +14,6 @@
     <properties>
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
         <property name="javax.persistence.jdbc.url" value="jdbc://192.168.10.99:5432/studs" />
-        <property name="javax.persistence.jdbc.user" value="s242463" />
-        <property name="javax.persistence.jdbc.password" value="qoo724" />
 
         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
         <property name="hibernate.hbm2ddl.auto" value="create" />
